@@ -99,7 +99,7 @@ jobs:
           cache-to: type=gha,mode=max
 
       - name: Trivy gate
-        uses: aquasecurity/trivy-action@0.36.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: lab11-app:scan
           severity: HIGH,CRITICAL
